@@ -5,8 +5,9 @@ return {
     "neovim/nvim-lspconfig",
     "nvim-lua/plenary.nvim",
   },
-  opts = {
-    mappings = true,
-  },
+  init = function()
+    vim.g.lean_config = {
+      mappings = true,
+    }
+  end,
 }
-
